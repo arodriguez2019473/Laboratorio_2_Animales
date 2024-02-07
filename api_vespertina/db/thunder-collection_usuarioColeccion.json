@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "usuarioColeccion",
-    "dateExported": "2024-02-06T22:25:06.261Z",
+    "dateExported": "2024-02-07T23:21:09.330Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -29,13 +29,24 @@
             "colId": "e239a611-87ff-4bdc-a3d6-6ccd8f68e2e5",
             "containerId": "",
             "name": "get usuarios",
-            "url": "http://localhost:3000/api/usuarios",
+            "url": "http://localhost:3000/api/usuarios?limite=5&desde=3",
             "method": "GET",
             "sortNum": 40000,
             "created": "2024-02-06T21:38:19.340Z",
-            "modified": "2024-02-06T22:10:27.533Z",
+            "modified": "2024-02-07T23:19:52.677Z",
             "headers": [],
-            "params": [],
+            "params": [
+                {
+                    "name": "limite",
+                    "value": "5",
+                    "isPath": false
+                },
+                {
+                    "name": "desde",
+                    "value": "3",
+                    "isPath": false
+                }
+            ],
             "tests": []
         },
         {
@@ -81,6 +92,76 @@
             "sortNum": 70000,
             "created": "2024-02-06T22:22:06.357Z",
             "modified": "2024-02-06T22:22:46.375Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9b33e2b7-85a8-4a2c-9083-e1524f7c4ccb",
+            "colId": "e239a611-87ff-4bdc-a3d6-6ccd8f68e2e5",
+            "containerId": "",
+            "name": "Agregar_animales",
+            "url": "http://localhost:3000/api/animales",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-02-07T22:07:10.483Z",
+            "modified": "2024-02-07T23:19:18.117Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"nombre\":\"paloma\",\n\"nombreCientifico\": \"1\",\n\"familia\": \"2\",\n\"edad\": \"2\",\n\"tipo\": \"Hervivoro\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b69ffc39-872b-4892-b151-b98265c8e1f6",
+            "colId": "e239a611-87ff-4bdc-a3d6-6ccd8f68e2e5",
+            "containerId": "",
+            "name": "get animal",
+            "url": "http://localhost:3000/api/animales?limite=4&desde=5",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-02-07T23:02:07.688Z",
+            "modified": "2024-02-07T23:20:08.682Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "limite",
+                    "value": "4",
+                    "isPath": false
+                },
+                {
+                    "name": "desde",
+                    "value": "5",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "449800e1-f5a8-40bf-aa86-c1c8f41ca5c2",
+            "colId": "e239a611-87ff-4bdc-a3d6-6ccd8f68e2e5",
+            "containerId": "",
+            "name": "get animalById",
+            "url": "",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-02-07T23:04:31.342Z",
+            "modified": "2024-02-07T23:04:31.342Z",
+            "headers": []
+        },
+        {
+            "_id": "8f3d8ba1-7e2b-4408-937a-30f391a41c96",
+            "colId": "e239a611-87ff-4bdc-a3d6-6ccd8f68e2e5",
+            "containerId": "",
+            "name": "put usuario",
+            "url": "http://localhost:3000/api/animales",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-02-07T23:10:00.949Z",
+            "modified": "2024-02-07T23:13:24.338Z",
             "headers": [],
             "params": [],
             "tests": []

@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongose');
+const { Schema, model } = require('mongoose');
 
 const AnimalesSchema = Schema({
 
@@ -23,12 +23,23 @@ const AnimalesSchema = Schema({
         type:String,
         require:[true, 'el campo del habitad es obligatoria']
     },
+    
+    estado:{
+        type: Boolean,
+        default:true
+    },
+
+    edad:{
+        type:String,
+        require:['el campo de edad es obligatoria']
+    },
 
     tipo:{
         type:String,
         require:true,
         enum: ["Hervivoro","Carnivoro","omnivoros"]
     }
+
 
 });
 
