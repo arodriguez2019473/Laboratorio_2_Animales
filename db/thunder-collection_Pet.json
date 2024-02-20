@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Pet",
+    "dateExported": "2024-02-20T19:30:21.704Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "95c7c13c-cc9d-44ad-8756-7b8700e43584",
+            "colId": "bd6c6643-d997-48d5-a7d2-7ca2ca901cd8",
+            "containerId": "",
+            "name": "agregar",
+            "url": "http://localhost:3000/api/animales",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-20T18:49:04.222Z",
+            "modified": "2024-02-20T19:19:48.224Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"nombre\":\"Perro\", \n \"nombreCientifico\":\"Canis lupus familiaris\",\n \"familia\":\"canidos\",\n \"edad\":\"8\",\n \"tipo\":\"omnivoros\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6884379f-40eb-4885-b192-aa7bbc165dc9",
+            "colId": "bd6c6643-d997-48d5-a7d2-7ca2ca901cd8",
+            "containerId": "",
+            "name": "get",
+            "url": "http://localhost:3000/api/animales",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-20T19:19:55.195Z",
+            "modified": "2024-02-20T19:25:56.475Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "dcef2bda-8f80-40d8-b535-7786d0823e06",
+            "colId": "bd6c6643-d997-48d5-a7d2-7ca2ca901cd8",
+            "containerId": "",
+            "name": "get animal",
+            "url": "http://localhost:3000/api/animales/65c40f8a36f29bd41884cee3",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-20T19:25:47.901Z",
+            "modified": "2024-02-20T19:26:06.844Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6937d005-bef2-4713-823b-611bbdddbfd1",
+            "colId": "bd6c6643-d997-48d5-a7d2-7ca2ca901cd8",
+            "containerId": "",
+            "name": "delete",
+            "url": "http://localhost:3000/api/animales/65d4fa2f6cd210fd8a33c2db",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-02-20T19:26:29.721Z",
+            "modified": "2024-02-20T19:26:59.183Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "562fa703-f904-440e-9302-7dded0e8fdb9",
+            "colId": "bd6c6643-d997-48d5-a7d2-7ca2ca901cd8",
+            "containerId": "",
+            "name": "update",
+            "url": "http://localhost:3000/api/animales/65c40f8a36f29bd41884cee3",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-02-20T19:27:23.441Z",
+            "modified": "2024-02-20T19:28:06.823Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"nombre\":\"loco\", \n \"nombreCientifico\":\"loco\",\n \"familia\":\"loco\",\n \"edad\":\"5\",\n \"tipo\":\"omnivoros\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

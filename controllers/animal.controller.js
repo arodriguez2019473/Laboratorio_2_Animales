@@ -4,8 +4,8 @@ const { response } = require('express');
 
 const animalesGet = async (req, res = response) => {
 
-    const {limite, desde} =req.query;
-    const query = {estado:response} 
+    const {limite, desde} = req.query;
+    const query = {estado: true} 
     const [total, animales] = await Promise.all([
 
         Animales.countDocuments(query),
